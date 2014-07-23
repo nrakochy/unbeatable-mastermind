@@ -1,3 +1,5 @@
+class Key_Pegs
+  
   def score_pegs(guess, litmus)    
     key_pegs = [0,0]
        
@@ -38,21 +40,5 @@
     
   end
 
-  
-  def reduce_answers(guess, pegs_score, possible_answers)
-    remaining_answers = []
-    possible_answers.each do |arr| 
-      score_pegs(arr, guess) 
-      remaining_answers.push(arr) if @key_pegs == pegs_score
-    end
       
-    @possible_answers = remaining_answers    
-  end
-
-
-  def determine_next_move
-    @computer_guess = @possible_answers.first
-  end
-      
-
-   
+end
