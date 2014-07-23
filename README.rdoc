@@ -1,7 +1,9 @@
 This is a Mastermind game designed to be played from the command line. The human player chooses a secret code, and the computer will crack the code in 7 guesses or less. To play, 'ruby mastermind.rb' once you get all the files.
 
 
+
 In terms of Rspec, I was specifically looking to test the algorithms to make sure that 1) the key pegs were returning the proper values, and 2) the total number of possible answers was being correctly reduced based on the returned key peg value. 
+
 
 
 I found an important reduction mechanism in http://stackoverflow.com/questions/1185634/how-to-solve-the-mastermind-guessing-game, specifically as it relates to symmetric scoring. This was a helpful insight.
