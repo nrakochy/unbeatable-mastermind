@@ -56,10 +56,12 @@ GAME_OVERVIEW
     puts "Possible answers remaining = #{remaining_answers.length}."
   end
   
-  def game_over number_of_turns
+  def game_over number_of_turns, computer_guess
     puts <<-GAME_OVER
-    
-Game over. You lose. And it only took me #{number_of_turns} turns.
+
+Your secret code is #{computer_guess}. Game over. You lose. 
+And it only took me #{number_of_turns} turns.
+
 I will crush you next time too, so it is time to quit. 
 I thoroughly enjoyed this time together. Ciao.
 

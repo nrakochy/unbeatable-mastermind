@@ -21,7 +21,7 @@ class Codebreaker
       computer_guess = Move_Maker.new.determine_next_move(answer_pool) 
     end
     
-    Console_Messages.new.game_over(number_of_turns)
+    Console_Messages.new.game_over(number_of_turns, computer_guess)
   end
 
 end
